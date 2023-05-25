@@ -1,0 +1,15 @@
+#include <stdio.h>
+struct student{
+	char name[20];
+	int roll;
+	double gpa;
+}e;
+int main()
+{
+	strcpy(e.name,"prudhvi gattu");
+	e.roll=14;
+	e.gpa=6.4;
+	printf("%d\n",e.roll);
+	puts(e.name);
+	printf("%.1lf",e.gpa);
+}
