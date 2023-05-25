@@ -1,0 +1,15 @@
+#include <stdio.h>
+int leapYear(int n);
+int main()
+{
+	
+	printf("%d",leapYear(2016));
+	//1 represents leapyear and 0 represents not a leapyear
+}
+int leapYear(int n)
+{
+	if((n%4==0)&&((n%400==0)||(n%100!=0)))
+	return 1;
+	else
+	return 0;
+}
