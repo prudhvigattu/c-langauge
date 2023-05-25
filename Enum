@@ -1,0 +1,8 @@
+#include <stdio.h>
+enum days{sunday=5,monday,tuesday,wednesday,thursday,friday,saturday
+}today;
+int main()
+{
+	today=wednesday;
+	printf("%d",today);
+}
