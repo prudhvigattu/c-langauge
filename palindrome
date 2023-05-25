@@ -1,0 +1,22 @@
+#include <stdio.h>
+int palindrome(int n);
+int main()
+{
+	
+	printf("%d",palindrome(5621));
+	//1 represents palindrome and 0 represents not a palindrome number
+}
+int palindrome(int n)
+{
+	int sum=0,rem,temp=n;
+	while(n>0)
+	{
+		rem=n%10;
+		sum=(sum*10)+rem;
+		n=n/10;
+	}
+	if(sum==temp)
+	return 1;
+	else
+	return 0;
+}
